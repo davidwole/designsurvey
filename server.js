@@ -28,7 +28,7 @@ app.post("/api/upload", async (req, res) => {
     res.json({ url: uploadResponse.url });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ err: "Something went wrong" });
+    res.status(500).json({ err: err.message });
   }
 });
 
