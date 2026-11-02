@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const connectDB = require("./config/db");
 require("dotenv").config();
 
-connectDB();
+// connectDB(); 
 
 app.use(express.static("public"));
 app.use(express.json({ limit: "50mb" }));
