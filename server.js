@@ -23,7 +23,7 @@ app.post("/api/upload", async (req, res) => {
   try {
     const fileStr = req.body.data;
     const uploadResponse = await cloudinary.uploader.upload(fileStr, {
-      upload_preset: "ghlsurvey",
+      upload_preset: "gemsdoc",
     });
     res.json({ url: uploadResponse.url });
   } catch (err) {
